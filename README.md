@@ -3,6 +3,11 @@ A simple dumper for the Wigle.net API
 
 v.0.4
 
+## Wigle.net API token
+Get it here: https://wigle.net/account   
+
+Note: API Name / Token is different from `user` / `password`
+
 ## Example usage
 
 ### Find appropriate dump size
