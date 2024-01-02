@@ -50,18 +50,33 @@ Using the `-d` parameter (dry run) you should experiment with the `chunk size` `
 E.g. try: `-c 0.01` vs `-c 0.001` so the number of `requests prepared` is below 50.   
 
 ```bash
-$ python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.929610 --west 4.763731 -n <your API Name> -t <Your API Token> -c 0.05 -d -v
-[info] Dry Run: 35 requests prepared.
-Prepared Request 1: North: 45.072528, South: 45.047528, West: 5.763731, East: 5.788731
-Prepared Request 2: North: 45.072528, South: 45.047528, West: 5.788731, East: 5.813731000000001
-Prepared Request 3: North: 45.072528, South: 45.047528, West: 5.813731000000001, East: 5.838731000000001
-Prepared Request 4: North: 45.072528, South: 45.047528, West: 5.838731000000001, East: 5.863731000000001
-Prepared Request 5: North: 45.072528, South: 45.047528, West: 5.863731000000001, East: 5.888731000000002
-Prepared Request 6: North: 45.072528, South: 45.047528, West: 5.888731000000002, East: 5.913731000000002
-Prepared Request 7: North: 45.072528, South: 45.047528, West: 5.913731000000002, East: 5.92961
-Prepared Request 8: North: 45.047528, South: 45.022528, West: 5.763731, East: 5.788731
-Prepared Request 9: North: 45.047528, South: 45.022528, West: 5.788731, East: 5.813731000000001
-...
+$ python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.929610 --west 4.763731 -n <your API Name> -t <Your API Token> -c 0.05 -d -b -v
+[Dry Run] Wi-Fi: 12 requests prepared.
+Wi-Fi Request 1: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Wi-Fi Request 2: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Wi-Fi Request 3: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Wi-Fi Request 4: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
+Wi-Fi Request 5: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Wi-Fi Request 6: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Wi-Fi Request 7: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Wi-Fi Request 8: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
+Wi-Fi Request 9: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Wi-Fi Request 10: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Wi-Fi Request 11: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Wi-Fi Request 12: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
+[Dry Run] Bluetooth: 12 requests prepared.
+Bluetooth Request 1: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Bluetooth Request 2: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Bluetooth Request 3: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Bluetooth Request 4: {'latrange1': 45.072528, 'latrange2': 45.022528, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
+Bluetooth Request 5: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Bluetooth Request 6: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Bluetooth Request 7: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Bluetooth Request 8: {'latrange1': 45.022528, 'latrange2': 44.972528000000004, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
+Bluetooth Request 9: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.763731, 'longrange2': 4.813731}
+Bluetooth Request 10: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.813731, 'longrange2': 4.863731}
+Bluetooth Request 11: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.863731, 'longrange2': 4.913730999999999}
+Bluetooth Request 12: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 'longrange1': 4.913730999999999, 'longrange2': 4.92961}
 ```
  Some users had success requesting a higher limit, IDK if there's a payed option.   
 
