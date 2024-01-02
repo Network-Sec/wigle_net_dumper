@@ -81,7 +81,7 @@ Bluetooth Request 12: {'latrange1': 44.972528000000004, 'latrange2': 44.960146, 
  Some users had success requesting a higher limit, IDK if there's a payed option.   
 
 ### Dump data
-Simply remove `-d` to start the real dump. Optionally add `-v` for verbose output. In v.0.4 the output will be written to `wigle_dump_2024-01-02_03-34.json`.  
+Simply remove `-d` to start the real dump. Optionally add `-v` for verbose output. By default the output will be written to `wigle_dump_2024-01-02_03-34.json`. You can supply a custom filename using `-f <your filename>`.
 ```bash
 $ python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.929610 --west 4.763731 -n <your API Name> -t <Your API Token> -c 0.05 -v
 [info] Query returned 100 networks.
