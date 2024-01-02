@@ -11,7 +11,7 @@ Using the `-d` parameter (dry run) you should experiment with the `chunk size` `
 E.g. try: `-c 0.01` vs `-c 0.001` so the number of `requests prepared` is below 50.   
 
 ```bash
-python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.929610 --west 4.763731 -n <your API Name> -t <Your API Token> -c 0.05 -d
+python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.929610 --west 4.763731 -n <your API Name> -t <Your API Token> -c 0.05 -d -v
 [info] Dry Run: 35 requests prepared.
 Prepared Request 1: North: 45.072528, South: 45.047528, West: 5.763731, East: 5.788731
 Prepared Request 2: North: 45.072528, South: 45.047528, West: 5.788731, East: 5.813731000000001
