@@ -1,4 +1,4 @@
-# wigle.net data dumper
+# Wigle.net data dumper
 A simple dumper for the Wigle.net API
 
 v.0.4
