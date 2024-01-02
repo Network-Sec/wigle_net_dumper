@@ -3,6 +3,8 @@ A simple dumper for the Wigle.net API
 
 v.0.9
 
+`Warning`: MongoDB support is untested yet. 
+
 ## Wigle.net API token
 Get it here: https://wigle.net/account   
 
@@ -75,10 +77,4 @@ $ python3 wigleBatchDownloader.py --north 46.072528 --south 43.960146 --east 4.9
 [info] 1109 networks saved to downloaded_data.json
 ```
 
-### Outlook
-The next version is already in development supporting:
-- date/time within the filename
-- custom filename
-- mongodb support
-- extended data (optional bluetooth)
 
